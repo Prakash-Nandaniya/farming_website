@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Common CSS styles */
+       
+        .cropes {
+            margin: 30px 10px;
+            padding: 0px 25px;
+        }
+        body {
+            margin: 0;
+        }
+        body{
+            background-color: rgb(211, 143, 143); 
+            background-image: url("https://images.unsplash.com/photo-1468253926858-331ac6e1e97f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+            background-repeat: no-repeat;
+            backdrop-filter: blur(5px) ;
+            background-size: cover;
+            z-index: -1;
+        }
+        .container {
+            display: flex;  
+            width : 70%;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            color: #8b1818;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(11, 11, 10, 0.5);
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            width: 60%;
+            border-radius: 10px;
+            opacity: 0.9;
+        }
+         button{
+            font-size: medium;
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+            border-style: none;
+            background-color: rgb(192, 168, 168);
+            box-shadow: 3px 3px 1px rgb(141, 124, 56);
+            opacity: 0.8;
+        } 
+        button:hover{
+            background-color: rgb(117, 105, 105);
+            cursor: pointer;
+        }
+        button:active{
+            background-color: rgb(79, 72, 72);
+        }
+        
+        /* Additional CSS for background */
+       
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cropes" id="grapes">
+            <img src="https://cdn.pixabay.com/photo/2018/09/09/15/04/grape-3664769_1280.jpg" alt="Grapes">
+            <br>
+            <button onclick="location.href='grapes_intro.html'" target="blank">Introduction</button>
+        </div>
+        <div  class="cropes" id="oranges">
+            <img src="https://www.winesofcanada.com/winemakers/vine-training.jpg">
+            <br>
+            <button onclick="location.href='grapes-training.html'" target="blank">Training</button>
+        </div>
+        <div class="cropes" id="Peanut">
+            <img src="https://www.thespruce.com/thmb/Opnd3xFmwDf3mG8nWiym-UWayxI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/training-and-pruning-grapevines-4782839_4D-7cd9f3c780d845f498df663d30d1e03e.jpg" alt="Peanut">
+            <br>
+            <button onclick="location.href='grapes-prunning.html'" target="blank">Pruning</button>
+        </div>
+        <div class="cropes" id="Cotton">
+            <img src="https://media.istockphoto.com/id/1331927392/photo/grape-disease-bunch-drying-out-mildew-disease-of-young-grapes.jpg?s=612x612&w=0&k=20&c=npJyiEP8ZDamE_3rDR9kzArbnhPXHCVTqOlKmP3cApc=" alt="Cotton">
+            <br>
+            <button onclick="location.href='grapes-disease.html'" target="blank">Disease</button>
+        </div>
+    </div>
+</body>
+</html>
